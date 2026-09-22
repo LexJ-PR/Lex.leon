@@ -1,0 +1,176 @@
+
+/* ESTILO */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
+
+/* CONTENEDOR */
+
+.container {
+    width: 88%;
+    margin: 0 auto;
+}
+
+/* HEADER*/
+
+#header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#header h1 {
+    font-size: 42px;
+    letter-spacing: 6px;
+}
+
+/* NAV */
+
+#nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: white;
+
+    padding: 12px 20px;
+
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+#nav ul li a:hover {
+    background: white;
+    color: black;
+    transform: translateY(-2px);
+}
+
+/* MAIN */
+
+#main {
+    margin-top: 40px;
+}
+
+/* CONTENIDOS */
+
+.contenidos {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contenidos video {
+    width: 100%;
+    border-radius: 16px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+}
+
+.contenidos h2 {
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.contenidos p {
+    color: #bbb;
+}
+
+/* GALERÍA */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.galeria a {
+    text-decoration: none;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    background: #1a1a1a;
+
+    transition: 0.4s;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+}
+
+.galeria a:hover {
+    transform: scale(1.03);
+}
+
+/* IMAGENES  */
+.galeria img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s;
+}
+
+.galeria a:hover img {
+    transform: scale(1.08);
+    filter: brightness(1.2);
+}
+
+/* TEXTO */
+.galeria p {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    background: #111;
+}
+
+/* INFO */
+
+.info {
+    text-align: center;
+    max-width: 750px;
+    margin: 60px auto;
+    color: #ccc;
+    line-height: 1.6;
+    
+}
+/*Web*/
+.redes 
+ h2 {color: white;}
+a:link {background-color: black;
+    text-decoration: none;}
+a:visited {color: white;}
+
+ul {list-style-type: none;}
+ul li {display: inline;}
+a {text-align: center;padding: 14px 16px 20px 20px;}
+
+/* FOOTER */
+
+#footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #777;
+}

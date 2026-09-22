@@ -1,0 +1,126 @@
+/* ESTILOS GENERALES */
+
+body {
+    background-color: #0a0a0a;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+/* CONTENEDOR */
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* HEADER */
+
+#header {
+    padding: 25px;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    width: 35%;
+    margin: 25px auto;
+
+    background: #111;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+#header h1 {
+    letter-spacing: 4px;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+/* NAV */
+
+#nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 12px;
+}
+
+#nav ul li a {
+    display: block;
+    padding: 12px 20px;
+
+    background-color: #1a1a1a;
+    border: 1px solid rgba(255,255,255,0.2);
+
+    text-decoration: none;
+    color: white;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+#nav ul li a:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-2px);
+}
+
+/* MAIN */
+
+#main {
+    margin-top: 35px;
+}
+
+/* CONTENIDOS */
+
+.contenidos {
+    margin-bottom: 50px;
+}
+
+.contenidos h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+/*  VIDEO  */
+
+.contenidos video {
+    width: 100%;
+    max-width: 900px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+
+    transition: 0.4s;
+}
+
+
+.contenidos video:hover {
+    transform: scale(1.02);
+}
+
+/* FOOTER */
+
+#footer {
+    margin-top: 50px;
+    padding: 20px;
+
+    background-color: #111;
+    color: #aaa;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-text {
+    margin: 0;
+    text-align: center;
+}
