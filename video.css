@@ -92,6 +92,7 @@ body {
 
 /*  VIDEO  */
 
+
 .contenidos video {
     width: 100%;
     max-width: 900px;
@@ -101,6 +102,15 @@ body {
     box-shadow: 0 15px 35px rgba(0,0,0,0.7);
 
     transition: 0.4s;
+
+    
+}
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+    display: block;
 }
 
 
