@@ -4,51 +4,102 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <title>Producciones Audiovisuales | Lex León</title>
-
+    <title>Audiovisual | Lex León</title>
     <link rel="stylesheet" href="video.css">
 
     <style>
         .seccion-videos {
-            margin-bottom: 55px;
+            margin-bottom: 60px;
         }
 
         .seccion-videos h2 {
             margin-bottom: 25px;
         }
 
-        .videos-grid {
+        .portfolio-video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 25px;
         }
 
-        .video-responsive {
-            position: relative;
+        .portfolio-video {
             width: 100%;
             aspect-ratio: 16 / 9;
         }
 
-        .video-responsive iframe {
+        #main .portfolio-video iframe {
+            display: block;
             width: 100%;
             height: 100%;
-            border: none;
+            border: 0;
             border-radius: 12px;
         }
 
         .produccion-info {
-            margin-top: 18px;
+            margin-top: 20px;
             line-height: 1.7;
         }
 
         .produccion-info h3 {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         .produccion-info p {
-            margin-top: 8px;
+            margin-bottom: 12px;
+        }
+
+        .shorts-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .short-item {
+            min-width: 0;
+        }
+
+        .short-video {
+            width: 100%;
+            aspect-ratio: 9 / 16;
+        }
+
+        #main .short-video iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 12px;
+        }
+
+        .short-item p {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .seccion-descripcion {
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 650px) {
+            .portfolio-video-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .shorts-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 12px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .shorts-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -62,7 +113,7 @@
         <h1>Audiovisual</h1>
     </div>
 
-    <!-- NAV -->
+    <!-- NAVEGACION -->
     <div id="nav">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -71,19 +122,19 @@
         </ul>
     </div>
 
-    <!-- MAIN -->
+    <!-- CONTENIDO PRINCIPAL -->
     <div id="main">
 
         <div class="contenidos">
 
-            <!-- PRODUCCIONES PROPIAS -->
+            <!-- PRODUCCIONES AUDIOVISUALES -->
             <section class="seccion-videos">
 
                 <h2>Producciones Audiovisuales</h2>
 
-                <div class="videos-grid">
+                <div class="portfolio-video-grid">
 
-                    <div class="video-responsive">
+                    <div class="portfolio-video">
                         <iframe
                             src="https://www.youtube.com/embed/feTapnNaNp8"
                             title="Producción audiovisual 1"
@@ -93,7 +144,7 @@
                         </iframe>
                     </div>
 
-                    <div class="video-responsive">
+                    <div class="portfolio-video">
                         <iframe
                             src="https://www.youtube.com/embed/3ODFzSxTU-w"
                             title="Producción audiovisual 2"
@@ -107,16 +158,15 @@
 
             </section>
 
-            <!-- PRODUCCIONES EN COLABORACION -->
+            <!-- PARTICIPACION EN PRODUCCIONES -->
             <section class="seccion-videos">
 
                 <h2>Producciones en las que he participado</h2>
 
-                <div class="videos-grid">
+                <div class="portfolio-video-grid">
 
-                    <div class="produccion">
-
-                        <div class="video-responsive">
+                    <div>
+                        <div class="portfolio-video">
                             <iframe
                                 src="https://www.youtube.com/embed/14lLBQYn7J0"
                                 title="Programa - Práctica profesional"
@@ -127,19 +177,110 @@
                         </div>
 
                         <div class="produccion-info">
-
-                            <h3>Programa - Práctica profesional</h3>
-
-                            <p><strong>Rol:</strong> Apoyo técnico de audio</p>
+                            <h3>Programa - A Galope No</h3>
 
                             <p>
-                                Participé en la producción del programa,
-                                encargándome principalmente del control
-                                de audio.
+                                Participé en la producción del
+                                programa, encargándome principalmente
+                                del control de audio, apoyo en camaras y switcher.
                             </p>
-
                         </div>
+                    </div>
 
+                </div>
+
+            </section>
+
+            <!-- EDICION PARA REDES SOCIALES -->
+            <section class="seccion-videos">
+
+                <h2>Edición para redes sociales</h2>
+
+                <p class="seccion-descripcion">
+                    Creación y edición de clips audiovisuales
+                    a partir de las transmisiones del programa,
+                    adaptando el contenido a formatos cortos
+                    para su publicación en redes sociales.
+                </p>
+
+                <div class="shorts-grid">
+
+                    <!-- CLIP 1 -->
+                    <div class="short-item">
+                        <div class="short-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/NEtML83f8Uw"
+                                title="Clip 1"
+                                loading="lazy"
+                                allow="encrypted-media; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- CLIP 2 -->
+                    <div class="short-item">
+                        <div class="short-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/SRY-_Q7nD9o"
+                                title="Clip 2"
+                                loading="lazy"
+                                allow="encrypted-media; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- CLIP 3 -->
+                    <div class="short-item">
+                        <div class="short-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/EYI1hmKvgQk"
+                                title="Clip 3"
+                                loading="lazy"
+                                allow="encrypted-media; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- CLIP 4 -->
+                    <div class="short-item">
+                        <div class="short-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/QMz5U-vCq6o"
+                                title="Clip 4"
+                                loading="lazy"
+                                allow="encrypted-media; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- CLIP 5 -->
+                    <div class="short-item">
+                        <div class="short-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/ST8Yt8ihrM0"
+                                title="Clip 5"
+                                loading="lazy"
+                                allow="encrypted-media; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- CLIP 6 -->
+                    <div class="short-item">
+                        <div class="short-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/PFmSeB0JUL4"
+                                title="Clip 6"
+                                loading="lazy"
+                                allow="encrypted-media; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
 
                 </div>
