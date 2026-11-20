@@ -1,14 +1,56 @@
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
-
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>video html</title>
+    <title>Producciones Audiovisuales | Lex León</title>
 
     <link rel="stylesheet" href="video.css">
 
+    <style>
+        .seccion-videos {
+            margin-bottom: 55px;
+        }
+
+        .seccion-videos h2 {
+            margin-bottom: 25px;
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+            gap: 25px;
+        }
+
+        .video-responsive {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+        }
+
+        .video-responsive iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 12px;
+        }
+
+        .produccion-info {
+            margin-top: 18px;
+            line-height: 1.7;
+        }
+
+        .produccion-info h3 {
+            margin-bottom: 8px;
+        }
+
+        .produccion-info p {
+            margin-top: 8px;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,30 +76,83 @@
 
         <div class="contenidos">
 
-            <h2>Producciones Audiovisuales</h2>
-        
-           <iframe
-     src="https://www.youtube.com/embed/feTapnNaNp8"
-    title="Video de portafolio"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-</iframe>
-            
-            <iframe
-               src="https://www.youtube.com/embed/3ODFzSxTU-w"
-    title="Video de portafolio" 
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-</iframe>
+            <!-- PRODUCCIONES PROPIAS -->
+            <section class="seccion-videos">
+
+                <h2>Producciones Audiovisuales</h2>
+
+                <div class="videos-grid">
+
+                    <div class="video-responsive">
+                        <iframe
+                            src="https://www.youtube.com/embed/feTapnNaNp8"
+                            title="Producción audiovisual 1"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="video-responsive">
+                        <iframe
+                            src="https://www.youtube.com/embed/3ODFzSxTU-w"
+                            title="Producción audiovisual 2"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- PRODUCCIONES EN COLABORACION -->
+            <section class="seccion-videos">
+
+                <h2>Producciones en las que he participado</h2>
+
+                <div class="videos-grid">
+
+                    <div class="produccion">
+
+                        <div class="video-responsive">
+                            <iframe
+                                src="https://www.youtube.com/embed/14lLBQYn7J0"
+                                title="Programa - Práctica profesional"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="produccion-info">
+
+                            <h3>Programa - Práctica profesional</h3>
+
+                            <p><strong>Rol:</strong> Apoyo técnico de audio</p>
+
+                            <p>
+                                Participé en la producción del programa,
+                                encargándome principalmente del control
+                                de audio.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
         </div>
 
     </div>
 
     <!-- FOOTER -->
     <div id="Footer">
-    <p>&copy; 2026 Lex León Portfolio. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Lex León Portfolio. Todos los derechos reservados.</p>
     </div>
 
 </div>
